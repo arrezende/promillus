@@ -1,0 +1,97 @@
+[05-Sep-2015 00:39:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/wp-content/themes/promillus/admin/functions/functions.filters.php on line 23
+[05-Sep-2015 00:39:14 UTC] PHP Stack trace:
+[05-Sep-2015 00:39:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/themes.php:0
+[05-Sep-2015 00:39:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/themes.php:10
+[05-Sep-2015 00:39:14 UTC] PHP   3. do_action() /home/ubuntu/workspace/wp-admin/admin.php:158
+[05-Sep-2015 00:39:14 UTC] PHP   4. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:496}() /home/ubuntu/workspace/wp-includes/plugin.php:496
+[05-Sep-2015 00:39:14 UTC] PHP   5. optionsframework_admin_init() /home/ubuntu/workspace/wp-includes/plugin.php:496
+[05-Sep-2015 00:39:14 UTC] PHP   6. of_save_options() /home/ubuntu/workspace/wp-content/themes/promillus/admin/functions/functions.interface.php:35
+[05-Sep-2015 00:39:14 UTC] PHP   7. apply_filters() /home/ubuntu/workspace/wp-content/themes/promillus/admin/functions/functions.admin.php:117
+[05-Sep-2015 00:39:14 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:213}() /home/ubuntu/workspace/wp-includes/plugin.php:213
+[05-Sep-2015 00:39:14 UTC] PHP   9. of_filter_save_media_upload() /home/ubuntu/workspace/wp-includes/plugin.php:213
+[16-Sep-2015 17:47:53 UTC] PHP Warning:  include_once(functions/widget_images.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/wp-content/themes/promillus/functions.php on line 290
+[16-Sep-2015 17:47:53 UTC] PHP Stack trace:
+[16-Sep-2015 17:47:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[16-Sep-2015 17:47:53 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[16-Sep-2015 17:47:53 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Sep-2015 17:47:53 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:83
+[16-Sep-2015 17:47:53 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:329
+[16-Sep-2015 17:47:53 UTC] PHP Warning:  include_once(): Failed opening 'functions/widget_images.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/wp-content/themes/promillus/functions.php on line 290
+[16-Sep-2015 17:47:53 UTC] PHP Stack trace:
+[16-Sep-2015 17:47:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[16-Sep-2015 17:47:53 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[16-Sep-2015 17:47:53 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Sep-2015 17:47:53 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:83
+[16-Sep-2015 17:47:53 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:329
+[16-Sep-2015 18:11:23 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/wp-content/themes/promillus/functions/widget_image.php on line 71
+[16-Sep-2015 18:11:23 UTC] PHP Stack trace:
+[16-Sep-2015 18:11:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[16-Sep-2015 18:11:23 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[16-Sep-2015 18:11:23 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Sep-2015 18:11:23 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:83
+[16-Sep-2015 18:11:23 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:329
+[16-Sep-2015 18:12:21 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/promillus/functions/widget_image.php on line 71
+[16-Sep-2015 18:12:21 UTC] PHP Stack trace:
+[16-Sep-2015 18:12:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[16-Sep-2015 18:12:21 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/widgets.php:10
+[16-Sep-2015 18:12:21 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[16-Sep-2015 18:12:21 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Sep-2015 18:12:21 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:83
+[16-Sep-2015 18:12:21 UTC] PHP   6. include() /home/ubuntu/workspace/wp-settings.php:329
+[17-Sep-2015 15:57:50 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ubuntu/workspace/wp-content/plugins/banner/teste.php on line 74
+[17-Sep-2015 15:57:50 UTC] PHP Stack trace:
+[17-Sep-2015 15:57:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[17-Sep-2015 15:57:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[17-Sep-2015 15:57:50 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[17-Sep-2015 15:57:50 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:83
+[21-Sep-2015 11:57:22 UTC] PHP Fatal error:  Cannot redeclare class widget_image in /home/ubuntu/workspace/wp-content/themes/promillus/functions/widget_txt.php on line 0
+[21-Sep-2015 11:57:22 UTC] PHP Stack trace:
+[21-Sep-2015 11:57:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[21-Sep-2015 11:57:22 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[21-Sep-2015 11:57:22 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Sep-2015 11:57:22 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:83
+[21-Sep-2015 11:57:22 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:329
+[21-Sep-2015 11:57:24 UTC] PHP Fatal error:  Cannot redeclare class widget_image in /home/ubuntu/workspace/wp-content/themes/promillus/functions/widget_txt.php on line 0
+[21-Sep-2015 11:57:24 UTC] PHP Stack trace:
+[21-Sep-2015 11:57:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[21-Sep-2015 11:57:24 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/widgets.php:10
+[21-Sep-2015 11:57:24 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[21-Sep-2015 11:57:24 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Sep-2015 11:57:24 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:83
+[21-Sep-2015 11:57:24 UTC] PHP   6. include() /home/ubuntu/workspace/wp-settings.php:329
+[21-Sep-2015 11:57:31 UTC] PHP Fatal error:  Cannot redeclare class widget_image in /home/ubuntu/workspace/wp-content/themes/promillus/functions/widget_txt.php on line 0
+[21-Sep-2015 11:57:31 UTC] PHP Stack trace:
+[21-Sep-2015 11:57:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/widgets.php:0
+[21-Sep-2015 11:57:31 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/widgets.php:10
+[21-Sep-2015 11:57:31 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[21-Sep-2015 11:57:31 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Sep-2015 11:57:31 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:83
+[21-Sep-2015 11:57:31 UTC] PHP   6. include() /home/ubuntu/workspace/wp-settings.php:329
+[21-Sep-2015 12:11:37 UTC] PHP Parse error:  syntax error, unexpected '$argumentos' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/promillus/functions/widget_txt.php on line 23
+[21-Sep-2015 12:11:37 UTC] PHP Stack trace:
+[21-Sep-2015 12:11:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[21-Sep-2015 12:11:37 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[21-Sep-2015 12:11:37 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Sep-2015 12:11:37 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:83
+[21-Sep-2015 12:11:37 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:329
+[21-Sep-2015 12:13:37 UTC] PHP Parse error:  syntax error, unexpected '$argumentos' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/promillus/functions/widget_txt.php on line 23
+[21-Sep-2015 12:13:37 UTC] PHP Stack trace:
+[21-Sep-2015 12:13:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[21-Sep-2015 12:13:37 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[21-Sep-2015 12:13:37 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Sep-2015 12:13:37 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:83
+[21-Sep-2015 12:13:37 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:329
+[21-Sep-2015 12:15:37 UTC] PHP Parse error:  syntax error, unexpected '$argumentos' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/promillus/functions/widget_txt.php on line 23
+[21-Sep-2015 12:15:37 UTC] PHP Stack trace:
+[21-Sep-2015 12:15:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[21-Sep-2015 12:15:37 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[21-Sep-2015 12:15:37 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Sep-2015 12:15:37 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:83
+[21-Sep-2015 12:15:37 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:329
+[21-Sep-2015 12:17:37 UTC] PHP Parse error:  syntax error, unexpected '$argumentos' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/wp-content/themes/promillus/functions/widget_txt.php on line 23
+[21-Sep-2015 12:17:37 UTC] PHP Stack trace:
+[21-Sep-2015 12:17:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[21-Sep-2015 12:17:37 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[21-Sep-2015 12:17:37 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[21-Sep-2015 12:17:37 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:83
+[21-Sep-2015 12:17:37 UTC] PHP   5. include() /home/ubuntu/workspace/wp-settings.php:329

@@ -1,0 +1,59 @@
+.yellow{
+	color: #c09853;
+}
+
+.btn.yellow{
+	border: 1px solid #fbeed5;
+	background-color: #fcf8e3;
+}
+
+.btn.yellow:hover{background-color: #c09853;color: #fff;}
+
+.green{
+	color: #468847;
+}
+
+.btn.green{
+	border: 1px solid #d6e9c6;
+	background-color: #dff0d8;
+}
+
+.btn.green:hover{background-color: #468847;color: #fff;}
+
+.red{
+	color: #b94a48;
+}
+
+.btn.red{
+	border: 1px solid #eed3d7;
+	background-color: #f2dede;
+}
+
+.btn.red:hover{background-color: #b94a48;color: #fff;}
+
+.blue, .blue a{
+	color: #0F4B8F;
+}
+
+.btn.blue{
+	border: 1px solid #bce8f1;
+	background-color: #d9edf7;
+}
+
+.btn.blue:hover{background-color: #0F4B8F;color: #fff;}
+
+.bg.blue{
+	background: #0F4B8F;
+}
+
+.bg.blue2{
+	background: #3F73AD;
+}
+
+.bg.rosa{
+	background: #F6CDDB;
+}
+
+.bg.rosa2{
+	background: #F9B5CC;
+}

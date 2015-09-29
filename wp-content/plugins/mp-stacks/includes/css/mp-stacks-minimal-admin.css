@@ -1,0 +1,37 @@
+/* Stylesheet for mp_stacks admin */
+
+/* Hide left side menu  */
+#adminmenuwrap,
+#adminmenuback,
+#wpadminbar{
+	display:none;	
+}
+html.wp-toolbar {
+	padding-top: 0px;
+}
+@media only screen and (max-width: 900px){
+	.auto-fold #wpcontent, .auto-fold #wpfooter {
+		margin-left: 10px;
+	}
+}
+
+/*Reset margin for main content area */
+#wpcontent{
+	margin-left:0px;
+}
+/*Dont need to show the MP Stacks selector box on the minimal page*/
+#mp_stacksdiv{
+	display:none;	
+}
+#screen-options-link-wrap,
+.row-actions .inline,
+#posts-filter .search-box,
+#posts-filter .tablenav,
+.subsubsub,
+.add-new-h2,
+#contextual-help-link-wrap{
+	display:none;
+}
+#wpfooter{
+	margin-left:0px;	
+}

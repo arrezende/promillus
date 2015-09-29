@@ -1,0 +1,59 @@
+
+/**/
+.menu ul{ list-style: none; display: block; margin: 0 auto; list-style: none;}
+.menu .page_item, .menu .menu-item{ margin-top: 9px;  float: left; padding-left: 21px;}
+.menu .page_item a, .home .menu .page_item a.active, .home .menu .page_item a:hover{ color: #000;}
+.menu .page_item a, .menu .menu-item a { color: #000; opacity:0.6; font-size: 16px; text-decoration: none;}
+.menu .page_item a.active , .menu .menu-item a.active { color: #000; opacity:1; border-bottom: 2px solid #000; }
+.menu .page_item a:hover, .menu .menu-item a:hover{ color: #F9B5CC; opacity:1; }
+
+.menu .sub-menu{display:none; position: absolute; background: #fff;}
+.menu .menu-item-has-children:hover .sub-menu,.menu .sub-menu .menu-item-has-children:hover .sub-menu{display:block;}
+.menu .sub-menu .menu-item-has-children .sub-menu{display:none;}
+.menu .sub-menu .menu-item-has-children .sub-menu li{padding-left:0 !important;}
+
+.float{background:#0F4B8F;padding:0rem 0 1rem 0;position:fixed;margin-top: 0;top: 0;z-index: 999 !important;}
+.float .menu ul{ }
+.float .menu .menu-item a, 
+.float .page_item a, 
+.float .home .menu .page_item a.active, 
+.float .home .menu .page_item a:hover{ color: #fff;}
+.float .menu-item-has-children .sub-menu{background:#0F4B8F;padding: 5px;}
+.float .menu-item-has-children .sub-menu .menu-item-has-children .sub-menu{left:0px;}
+
+#toggle, .toggle {
+     display: none;
+}
+.fa.fa-bars{display:none; color:#0F4B8F;}
+
+@media only screen and (max-width: 768px) {
+    /*.fa-bars:after{content:"MENU"; width:1rem; display:block;}*/
+    .fa-bars{display: block !important;
+/*color: #FFF !important;*/
+font-size: 2rem !important;
+margin-top: 1rem !important;}
+.float .fa-bars{color:#fff;}
+    .menu{display:none; overflow:auto;}
+    /*header.float #menu:before{content:"menu"; display:block;width:10px; color:#fff; font-family:'Fredoka One', cursive; text-transform:uppercase;padding-top:1rem;}*/
+     #menu-header  {
+  position: relative;
+  padding-left: 1.25em;
+}
+
+    .sub-menu .sub-menu li:before{content:"- ";display:block; width:10px;float:left; color:#fff;}
+    #menu-header li {
+    float: none;
+    padding-left: 0px !important;
+    display: block;
+        
+    }
+    
+    .menu .sub-menu {
+    display: block !important;
+    position: relative;
+
+}
+.no-padding-top{padding-left:0;}
+
+    
+}

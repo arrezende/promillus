@@ -1,0 +1,369 @@
+/* Stylesheet for mp_stacks shortcode */
+.mp-stack{
+	padding:0px!important;
+	margin:0px!important;
+	position:relative;
+	word-wrap: break-word;
+}
+.mp-brick {
+	position:relative;
+	width: 100%; 
+	display:block;
+	padding:0px;
+	margin:0px;
+	z-index:1;
+	overflow:hidden;
+	text-align:left;
+}
+.mp-brick .brick-anchor{
+	position:absolute;
+	display:block;
+	top:0px;
+	height:0px;
+	width:0px;
+}
+.mp-brick .mp-brick-bg,
+.mp-brick .mp-brick-bg-inner{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-position: 50%;
+	width: 100%;
+	height: 100%;
+	z-index:-100;
+}
+.mp-brick .mp-brick-bg-inner:after{
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;	
+	background-position: 50%;
+	width: 100%;
+	height: 100%;
+}
+.mp-brick .mp-brick-outer{
+	display:block;
+	width:100%;
+	margin: 0px auto;
+	z-index:1;	
+}
+.mp-brick .mp-brick-inner{
+	position:relative;
+	width: 100%; 
+	display:table;
+	padding:0px;
+	margin:0px;
+	vertical-align:middle;
+}
+
+/* Content Areas */
+.mp-brick .mp-brick-content-type-container{
+	display:table-cell; 
+	vertical-align:middle;
+	z-index:2;
+	width: 50%; 
+	text-align:center;
+}
+.mp-brick[max-width~='600px'] .mp-brick-content-type-container{
+	display:table;
+	width:100%!important;	
+}
+.mp-brick .mp-brick-content-type-container.mp-brick-centered{
+	display:table;
+	width:100%;	
+}
+.mp-brick .mp-brick-content-types{
+	display:table-cell;
+	vertical-align:middle;	
+}
+.mp-brick .mp-brick-content-types-inner{
+	display: table;
+	width: 100%;	
+}
+.mp-brick .mp-brick-content-type-container.mp-brick-allleft{
+	display:block;
+	float:left;
+	clear:both;
+}
+.mp-brick .mp-brick-content-type-container.mp-brick-allright{
+	display:block;
+	float:right;
+	clear:both;
+}
+.mp-brick .mp-brick-first-content-type, 
+.mp-brick .mp-brick-second-content-type {
+	display: inline-block; /* Added in Version 1.0.1.3 to cause these container divs to always wrap entirely around their contents - even if those contents are not set to be inline-block*/
+	float:left; /* Added in Version 1.0.1.3 */
+	vertical-align: bottom;
+	position:relative;
+	width:100%;
+	z-index:2;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/*Text*/
+
+.mp-stacks-text-areas{
+	display:inline-block; /* Added in Version 1.0.1.3 to cause text site centered. It was sitting off to the left in a left/right alignment - which doesn't follow how other content types work */
+}
+
+/*Make sure there are no margins after the last elements in a text area */	
+.mp-brick .mp-stacks-text-area:last-child .mp-brick-text:last-child a:last-child, 
+.mp-brick .mp-stacks-text-area:last-child .mp-brick-text-line-1:last-child a:last-child, 
+.mp-brick .mp-stacks-text-area:last-child .mp-brick-text-line-2 a:last-child,
+.mp-brick .mp-stacks-text-area:last-child .mp-brick-text:last-child p:last-child, 
+.mp-brick .mp-stacks-text-area:last-child .mp-brick-text-line-1:last-child p:last-child, 
+.mp-brick .mp-stacks-text-area:last-child .mp-brick-text-line-2 p:last-child{
+	margin-bottom:0px!important;
+	margin-bottom:0rem!important;
+}
+.mp-brick .mp-brick-text, 
+.mp-brick .mp-brick-text-line-1, 
+.mp-brick .mp-brick-text-line-2,
+.mp-brick .mp-brick-text:last-child p:last-child,
+.mp-brick .mp-brick-text-line-1:last-child p:last-child,
+.mp-brick .mp-brick-text-line-2 p:last-child{	
+	line-height:1.4;
+	text-align:left;
+}
+
+/*Make sure any tags inside a text area paragraph are set to be inline-block;*/
+.mp-brick p *{
+	display:inline-block;
+	word-break:break-all;	
+}
+
+.mp-brick .mp-brick-content-type-container.mp-brick-centered .mp-brick-text, 
+.mp-brick .mp-brick-content-type-container.mp-brick-centered .mp-brick-text-line-1, 
+.mp-brick .mp-brick-content-type-container.mp-brick-centered .mp-brick-text-line-2,
+.mp-brick .mp-brick-content-type-container.mp-brick-centered .mp-brick-text p,
+.mp-brick .mp-brick-content-type-container.mp-brick-centered .mp-brick-text-line-1 p,
+.mp-brick .mp-brick-content-type-container.mp-brick-centered .mp-brick-text-line-2 p,
+.mp-brick[max-width~='600px'] .mp-brick-content-type-container .mp-brick-text, 
+.mp-brick[max-width~='600px'] .mp-brick-content-type-container .mp-brick-text-line-1, 
+.mp-brick[max-width~='600px'] .mp-brick-content-type-container .mp-brick-text-line-2,
+.mp-brick[max-width~='600px'] .mp-brick-content-type-container .mp-brick-text p,
+.mp-brick[max-width~='600px'] .mp-brick-content-type-container .mp-brick-text-line-1 p,
+.mp-brick[max-width~='600px'] .mp-brick-content-type-container .mp-brick-text-line-2 p
+{
+	text-align:center;
+}
+.mp-brick .mp-brick-content-type-container iframe{
+	margin:0;
+}
+.mp-brick .mp-brick-left .text{
+	text-align: -webkit-auto;
+	display: inline-block;
+}
+.mp-brick .mp-brick-right .text{
+	text-align: -webkit-auto;
+	display: inline-block;
+}
+
+/* Buttons in text areas */
+.mp-brick-text-line-1 p .button,
+.mp-brick-text-line-2 p .button,
+.mp-brick-text p .button{
+	margin-left:10px;
+}
+.mp-brick-text-line-1 p .button:first-child,
+.mp-brick-text-line-2 p .button:first-child,
+.mp-brick-text p .button:first-child{
+	margin-left:0px;
+}
+.mp-brick[max-width~='600px'] .mp-brick-text-line-1 p .button,
+.mp-brick[max-width~='600px'] .mp-brick-text-line-2 p .button,
+.mp-brick[max-width~='600px'] .mp-brick-text p .button{
+	margin-left:0px;
+	margin-bottom:10px;
+}
+.mp-brick[max-width~='600px'] .mp-brick-text-line-1 p .button:last-child,
+.mp-brick[max-width~='600px'] .mp-brick-text-line-2 p .button:last-child,
+.mp-brick[max-width~='600px'] .mp-brick-text p .button:last-child{
+	margin-bottom:0;
+}
+
+/* Links */
+.mp_brick a,
+.mp_brick a:hover{
+	display:inline-block;
+	text-decoration:none;	
+}
+
+/*Image*/
+.mp-brick .mp-brick-main-image{
+	vertical-align: middle;
+	box-shadow:none;
+	border-radius:0;
+	width:100%;
+	max-width:100%;
+	margin:0px;
+	box-sizing:border-box;
+}
+.mp-brick .mp-brick-main-link{
+	display:inline-block;
+	width:100%;	
+}
+
+/*Brick Meta*/
+.mp-brick .mp-brick-meta{
+	opacity:0;
+	background:none;
+	
+	-webkit-transition: opacity .4s ease-in-out, width .4s ease-in-out;
+	-moz-transition: opacity .4s ease-in-out, width .4s ease-in-out;
+	-ms-transition: opacity .4s ease-in-out, width .4s ease-in-out;
+	-o-transition: opacity .4s ease-in-out, width .4s ease-in-out;
+	transition: opacity .4s ease-in-out, width .4s ease-in-out;
+}
+.mp-brick:hover .mp-brick-meta{
+	opacity:1;
+}
+.mp-brick .mp-brick-title-container{
+	position:absolute;
+	top:0px;
+	text-align:center;
+	width:100%;
+	z-index:9999999;
+}
+.mp-brick .mp-brick-title-container .mp-brick-title{
+	position:relative!important;
+	display:inline-block;
+	font-size:10px!important;
+	line-height:10px!important;
+	vertical-align:top
+}
+.mp-brick .mp-brick-title,
+.mp-brick .mp-brick-edit-link,
+.mp-brick .mp-brick-add-before-link,
+.mp-brick .mp-brick-add-after-link,
+.mp-brick .mp-brick-reorder-bricks{
+	background-color:#333!important;
+	color:#FFFFFF!important;
+	padding:5px 3px!important;
+	position:absolute;
+	z-index:99999999;
+	text-decoration:none;
+	border: 1px solid #fff!important;
+	font-size:16px!important;
+	line-height:16px!important;
+	
+	-webkit-transition: width .4s ease-in-out, width .4s ease-in-out;
+	-moz-transition: width .4s ease-in-out, width .4s ease-in-out;
+	-ms-transition: width .4s ease-in-out, width .4s ease-in-out;
+	-o-transition: width .4s ease-in-out, width .4s ease-in-out;
+	transition: width .4s ease-in-out, width .4s ease-in-out;
+}
+.mp-brick .mp-brick-title,
+.mp-brick .mp-brick-edit-link{
+	top:0px;	
+}
+.mp-brick .mp-brick-add-before-link{
+	top:0px;
+	right:0px;
+	width:45px;	
+	overflow:hidden;
+	white-space:nowrap;
+}
+.mp-brick .mp-brick-add-before-link:hover{
+	width:140px;
+}
+.mp-brick .mp-brick-add-after-link{
+	right:0px;
+	bottom:0px;
+	width:45px;	
+	overflow:hidden;
+	white-space:nowrap;
+}
+.mp-brick .mp-brick-add-after-link:hover{
+	width:130px;	
+}
+.mp-brick .mp-brick-reorder-bricks{
+	bottom:0px;
+	left:0px;	
+}
+.mp-brick .mp-stack-updating{
+	position: absolute;
+	top: 50%;
+	width: auto;
+	text-align: center;
+	margin-top: -0.8em;
+	left: 8px;
+	right: 8px;
+	z-index: 99999999999999;	
+	color:#FFF;
+}
+.mp-stacks-updating-message{
+	margin-bottom:40px;	
+}
+
+/*No Brick*/
+.no-brick .mp-brick-inner{
+	height:250px;
+	min-height:250px;	
+	background-color:#FF9DA0;
+	color:#fff;
+}
+.no-brick .mp-brick-inner a{
+	color:#fff;	
+}
+
+/*magnific popup css*/
+.mfp-wrap .mfp-iframe-holder .mfp-video{
+	max-width: 640px;
+	max-height: 390px;
+}
+
+/* Clear Fix */
+.mp-stacks-clearedfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+/*Easy Digital Downloads Shortcode buy buttons in bricks */
+.mp-brick .edd_price_options ul{
+	list-style:none;
+}
+
+/* MP Stacks Default Page Template */
+.mp-stacks-default-page-template,
+.mp-stacks-default-page-template .entry-content{
+	width:100%!important;	
+	max-width:100%!important;
+	z-index: 3;
+	position: relative;
+}
+
+/* For Lightbox Popups that should fill the whole screen */
+.mp-stacks-iframe-full-screen{
+	z-index:9999999999999;
+}
+.mp-stacks-iframe-full-screen .mfp-content{
+	width: 100%;
+	height: 100%;
+	max-width: 95%!important;
+	max-height: 95%!important;
+}
+
+/* For Lightbox Popups that match the height of their content */
+.mp-stacks-iframe-height-match .mfp-content{
+	height:100%;
+	max-width: 95%!important;
+	max-height: 95%!important;
+}
+
+/* This compensates for the fitvids script which isn't needed, but some people might be using it */
+.mp-brick .mp-core-oembed-full-width-div .fluid-width-video-wrapper{
+	position:absolute!important;
+	top:0!important;
+	left:0!important;
+	width: 100%!important;
+	height: 100%!important;
+}

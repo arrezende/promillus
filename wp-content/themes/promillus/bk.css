@@ -1,0 +1,89 @@
+
+@media only screen and (max-width: 980px) and (min-width: 801px) {
+.bg{max-height: 17.7rem}
+.icon-header {
+    padding: 13% 5%}
+.title-widget {
+    font-size: 1rem;}
+.cycle-slide {
+    max-width: 160% !important;
+    margin-left: -328px;}
+    
+    .icon-header{margin-top:0}
+    .cap-title {
+    font-size: 1rem;}
+}
+
+
+@media only screen and (max-width: 800px) and (min-width: 769px) {
+.bg{max-height: 15.5rem;}
+.icon-header {
+    padding: 13% 5%}
+.title-widget {
+    font-size: 1rem;}
+.cycle-slide {
+    max-width: 173% !important;
+    margin-left: -323px;} 
+    
+	.cap-title {
+    font-size: 1rem;}
+}
+
+
+@media only screen and (max-width: 640px) and (min-width: 361px) {
+    .cycle-slide {max-width: 206% !important;}
+    .title-widget {font-size: 0.8rem;}
+    .bg{max-height: 14.7rem;}
+    .bg .textwidget {font-size: 0.55rem;}
+    .icon-header {padding: 5%;margin-top: 45px;}
+    .title-destaque a{font-size: 1.5rem;}
+    .cap-title {font-size: 0.8rem;}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 641px) {
+.bg{max-height: 15.15rem;}
+.icon-header {
+    padding: 13% 5%}
+.title-widget {
+    font-size: 1rem;}
+	.cycle-slide {
+    max-width: 175% !important;
+    margin-left: -319px;
+}
+.cap-title {
+    font-size: 1rem;}
+}
+
+@media only screen and (max-width: 360px) {
+  
+.home #logo a {
+    margin-left: 15%;
+}
+.bg {
+    max-height: 21.3rem;
+}
+.title-widget {
+    font-size: 1.5em;}
+    
+.cycle-pager{margin-right: 37%;}
+.cycle-slide {
+   /* margin-left: -130px;*/}
+.col-5.no-margin, .col-6.no-margin {
+    width: 100%;
+}
+.icon-header { padding: 5% 17%;}
+    
+.banner img {
+    max-height: 682px !important;}
+    
+    #banner span, #banner img {
+    background-size: cover;
+    max-height: 682px;
+    width: 377px;
+}
+
+.cycle-slide {margin-left: -16px;}
+
+#banner-home.container {padding:0;}
+	
+}
