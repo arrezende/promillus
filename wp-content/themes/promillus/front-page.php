@@ -4,18 +4,7 @@
 	<div class="container ">
 		<!--loop -->
 		<?php include "loop-destaque.php" ?>
-		<!--section class="section spacer">
-			<div class="col-5">
-				<h2 class="title-destaque">A IMPORTÂNCIA DO LEITE MATERNO - LENDAS E FATOS NA AMAMENTAÇÃO</h2>
-			</div>
-			<div class="col-3">
-				<p class="txt-destaque">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-				<a href="#" class="saiba-mais">Saiba Mais</a>
-			</div>
-			<div class="col-4">
-				<img src="http://lorempixel.com/400/200/sports/Dummy-Text" />
-			</div>			
-		</section-->
+		
 	</div>
 	<div class="container no-padding-top">
 		<section class="section">
@@ -30,14 +19,16 @@
 				
 						      	<li class="col-3">
 									<span class="cap blue"><?php echo '0'.$contador++ . '.'; ?></span><br><span class="cap-title blue">
-									<?php $parentscategory ="";
+									<?php /*$parentscategory ="";
 									foreach((get_the_category()) as $category) {
 									if ($category->category_parent == 0) {
 									$parentscategory .= ' <a href="' . get_category_link($category->cat_ID) . '" title="' . $category->name . '">' . $category->name . '</a>, ';
 									}
 						     
 									}
-									echo substr($parentscategory,0,-2); ?>
+									echo substr($parentscategory,0,-2); */?>
+									<a href="<?php the_permalink()?>"><?php the_title()?></a>
+									
 									
 									
 									</span>
@@ -54,9 +45,12 @@
 				<?php 
 				$args = array('posts_per_page' => 10);                   
 				$tagsLoop = new WP_Query($args);
+				echo '<ul class="tags">';
 				while($tagsLoop->have_posts() ) : $tagsLoop->the_post();
-					 the_tags( '<ul class="tags"><li>', '</li><li>', '</li></ul>' );
+					
+					 the_tags( '<li>', '</li><li>', '</li>' );
 				endwhile;
+				echo '</ul">';
 				?>
 			</div>
 		</section>

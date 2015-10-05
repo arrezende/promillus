@@ -32,7 +32,7 @@
 .btn.red:hover{background-color: #b94a48;color: #fff;}
 
 .blue, .blue a{
-	color: #0F4B8F;
+	color: rgb(0,151,219);
 }
 
 .btn.blue{
@@ -40,14 +40,16 @@
 	background-color: #d9edf7;
 }
 
-.btn.blue:hover{background-color: #0F4B8F;color: #fff;}
+.btn.blue.inverted{background-color: rgb(0,151,219);color: #fff;}
+.btn.blue.inverted:hover{background-color: #3F73AD;cursor:pointer}
+.btn.blue:hover{background-color: rgb(0,151,219);color: #fff;}
 
 .bg.blue{
-	background: #0F4B8F;
+	background: #0085C1;
 }
 
 .bg.blue2{
-	background: #3F73AD;
+	background: rgb(0,151,219);
 }
 
 .bg.rosa{

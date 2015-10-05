@@ -12,19 +12,19 @@
 .menu .sub-menu .menu-item-has-children .sub-menu{display:none;}
 .menu .sub-menu .menu-item-has-children .sub-menu li{padding-left:0 !important;}
 
-.float{background:#0F4B8F;padding:0rem 0 1rem 0;position:fixed;margin-top: 0;top: 0;z-index: 999 !important;}
+.float{background:rgb(0,151,219);padding:0rem 0 1rem 0;position:fixed;margin-top: 0 !important;top: 0;z-index: 999 !important;}
 .float .menu ul{ }
 .float .menu .menu-item a, 
 .float .page_item a, 
 .float .home .menu .page_item a.active, 
 .float .home .menu .page_item a:hover{ color: #fff;}
-.float .menu-item-has-children .sub-menu{background:#0F4B8F;padding: 5px;}
+.float .menu-item-has-children .sub-menu{background:rgb(0,151,219);padding: 5px;}
 .float .menu-item-has-children .sub-menu .menu-item-has-children .sub-menu{left:0px;}
 
 #toggle, .toggle {
      display: none;
 }
-.fa.fa-bars{display:none; color:#0F4B8F;}
+.fa.fa-bars{display:none; color:rgb(0,151,219);}
 
 @media only screen and (max-width: 768px) {
     /*.fa-bars:after{content:"MENU"; width:1rem; display:block;}*/

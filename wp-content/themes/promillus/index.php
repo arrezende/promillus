@@ -36,10 +36,10 @@
                 </div>
             </div>
             <div class="section border-bottom">
-                <div class="post_comment col-4">
+                <!--div class="post_comment col-4">
                     <i class="fa fa-comments"></i>
-                    <?php comments_popup_link('Seja o primeiro a comentar!', '(1) Comentário', '(%) Comentários'); ?>
-                </div>
+                    <?php //comments_popup_link('Seja o primeiro a comentar!', '(1) Comentário', '(%) Comentários'); ?>
+                </div-->
                 <div class="post_views col-4" title="Number of view.">
                     <i class="fa fa-eye"></i> <?php echo getPostViews(get_the_ID()); ?>
                 </div>
@@ -54,6 +54,7 @@
         </article>
             <?php endwhile; ?>
         <?php endif; ?>
+        <?php comments_template(); ?>
     </section>
     <?php get_sidebar();?>
 </div>

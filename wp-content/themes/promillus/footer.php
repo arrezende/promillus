@@ -15,5 +15,6 @@
 	</footer>
     
 <?php wp_footer(); ?>
+<!--a href="#" class="voltarTopo" onclick="$j('html,body').animate({scrollTop: $j('#voltarTopo').offset().top}, 2000);"><i class="fa fa-arrow-up"></i></a-->
 </body>
 </html>

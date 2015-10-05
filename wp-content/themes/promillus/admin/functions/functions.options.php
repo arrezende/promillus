@@ -126,15 +126,6 @@ $of_options[] = array( "name" => "Logo",
 						"type" => "media"
 				);
 
-$of_options[] = array( 	"name" 		=> "Logo - Largura",
-						"desc" 		=> "Largura em px do Logo - Max 500px",
-						"id" 		=> "logo_width",
-						"std" 		=> "200",
-						"min" 		=> "1",
-						"step"		=> "3",
-						"max" 		=> "500",
-						"type" 		=> "sliderui" 
-				);
 
 $of_options[] = array( 	
 						"name" 		=> "Ativa o Banner na Home",
@@ -147,68 +138,6 @@ $of_options[] = array(
 				);
 
 
-$of_options[] = array(
-					    "name"  => "Titulo Destaque",
-					    "desc"  => "Textarea description.",
-					    "id"    => "title_destaque",
-					    "std"   => "Default Text",
-					    "type"  => "text"
-				);
-
-$of_options[] = array(
-					    "name"  => "Texto Destaque",
-					    "desc"  => "Textarea description.",
-					    "id"    => "text_destaque",
-					    "std"   => "Default Text",
-					    "type"  => "textarea"
-				);
-
-$of_options[] = array( 	
-						"name" 		=> "Ativa portfolio na Home",
-						"desc" 		=> "Ativa e desativa a exibição do portfolio na home",
-						"id" 		=> "port_home",
-						"std" 		=> 0,
-						"folds" 	=> 1,
-						"on" 		=> "Enable",
-						"off" 		=> "Disable",
-						"type" 		=> "switch"
-				);
-
-$of_options[] = array(
-					    "name"  => "Titulo portfolio",
-					    "desc"  => "Textarea description.",
-					    "id"    => "title_portfolio",
-					    "std"   => "Default Text",
-					    "fold" 		=> "port_home",
-					    "type"  => "text"
-				);
-
-$of_options[] = array(
-					    "name"  => "Texto portfolio",
-					    "desc"  => "Textarea description.",
-					    "id"    => "text_portfolio",
-					    "std"   => "Default Text",
-					    "fold" 		=> "port_home",
-					    "type"  => "textarea"
-				);
-$of_options[] = array( 	
-						"name" 		=> "Ativa Formulario na Home",
-						"desc" 		=> "Ativa e desativa a exibição do formulario na home",
-						"id" 		=> "form_home",
-						"std" 		=> 0,
-						"folds" 	=> 1,
-						"on" 		=> "Enable",
-						"off" 		=> "Disable",
-						"type" 		=> "switch"
-				);
-$of_options[] = array(
-					    "name"  => "Shortcode do Contact Form",
-					    "desc"  => "Inserir o ID do Shortcode do Contact Form",
-					    "id"    => "shortcode_contact_form",
-					    "std"   => "",
-					    "fold" 	=> "form_home",
-					    "type"  => "text"
-				);
 //Social Media
 $of_options[] = array( 	"name" 	=> "Social Media",
 						"type" 	=> "heading",
@@ -256,53 +185,6 @@ $of_options[] = array( 	"name" 	=> "Layout",
 						"icon"		=> ADMIN_IMAGES . "icon-settings.png"
 				);
 $url =  ADMIN_DIR . 'assets/images/';
-$of_options[] = array( 	"name" 		=> "Main Layout",
-						"desc" 		=> "Select main content and sidebar alignment. Choose between 1, 2 or 3 column layout.",
-						"id" 		=> "layout",
-						"std" 		=> "",
-						"type" 		=> "images",
-						"options" 	=> array(
-							'1col-fixed.css' 	=> $url . '1col.png',
-							'2c-r-fixed.css' 	=> $url . '2cr.png',
-							'2c-l-fixed.css' 	=> $url . '2cl.png',
-							'3c-fixed.css' 		=> $url . '3cm.png',
-							'3c-r-fixed.css' 	=> $url . '3cr.png'
-						)
-				);
-
-$of_options[] = array( 	"name" 		=> "Post Layout",
-						"desc" 		=> "Select main content and sidebar alignment. Choose between 1, 2 or 3 column layout.",
-						"id" 		=> "post_layout",
-						"std" 		=> "",
-						"type" 		=> "images",
-						"options" 	=> array(
-							'' 	=> $url . '1col.png',
-							'one-col' 	=> $url . '2cr.png',
-							'one-col-left' 	=> $url . '2cl.png'/*,
-							'two-col' 		=> $url . '3cm.png',
-							'two-col-right' 	=> $url . '3cr.png'*/
-						)
-				);
-
-$of_options[] = array( 	
-						"name" 		=> "Ativa imagem no background",
-						"desc" 		=> "Ativa e desativa a imagem no background",
-						"id" 		=> "switch_bg",
-						"std" 		=> 0,
-						"folds" 	=> 1,
-						"on" 		=> "Enable",
-						"off" 		=> "Disable",
-						"type" 		=> "switch"
-				);
-
-$of_options[] = array( 	"name" 		=> "Background Images",
-						"desc" 		=> "Select a background pattern.",
-						"id" 		=> "custom_bg",
-						"std" 		=> $bg_images_url."bg0.png",
-						"type" 		=> "tiles",
-						"fold" 		=> "switch_bg",
-						"options" 	=> $bg_images,
-				);
 
 $of_options[] = array( 	"name" 		=> "Tracking Code",
 						"desc" 		=> "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.",

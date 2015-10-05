@@ -17,6 +17,7 @@
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() )  ?>/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() )  ?>/js/lightbox.js"></script>
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() )  ?>/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() )  ?>/js/tooltip.js"></script>
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() )  ?>/js/js.js"></script>
     
     <?php wp_head(); ?>
@@ -42,9 +43,9 @@
     </script>
   </head> 
 
-  <body <?php body_class( ); ?>>
+  <body <?php body_class( ); ?>  id="voltarTopo">
   <!--- HEADER START -->
-  
+
   <?php if(is_front_page()){ ?>
   <div class="container no-padding-top" id="banner-home" >
     <div class="section">
@@ -58,22 +59,22 @@
       <div class="col-5 no-margin">
         <section class="section header-widget">
           <div class="col-6 bg blue no-margin">
-            <img src="https://promillus-arrezende1.c9.io/wp-content/themes/promillus/images/mamadeira.png" class="icon-header" alt="Mamadeira">
+            <img src="<?php echo esc_url( get_template_directory_uri() )  ?>/images/mamadeira.png" class="icon-header mamadeira" alt="Mamadeira">
             
             <?php dynamic_sidebar( 'header-widget-area' ); ?>
           </div>
           <div class="col-6 bg blue2 no-margin">
-            <img src="https://promillus-arrezende1.c9.io/wp-content/themes/promillus/images/coracao.png" class="icon-header" alt="coração">
+            <img src="<?php echo esc_url( get_template_directory_uri() )  ?>/images/coracao.png" class="icon-header coracao" alt="coração">
             <?php dynamic_sidebar( 'header-widget-area2' ); ?>
           </div>
         </section>
         <section class="section header-widget">
           <div class="col-6 bg rosa no-margin">
-            <img src="https://promillus-arrezende1.c9.io/wp-content/themes/promillus/images/gravidez.png" class="icon-header" alt="gravidez">
+            <img src="<?php echo esc_url( get_template_directory_uri() )  ?>/images/gravidez.png" class="icon-header" alt="gravidez">
             <?php dynamic_sidebar( 'header-widget-area3' ); ?>
           </div>
           <div class="col-6 bg rosa2 no-margin">
-            <img src="https://promillus-arrezende1.c9.io/wp-content/themes/promillus/images/dicas.png" class="icon-header" alt="dicas">
+            <img src="<?php echo esc_url( get_template_directory_uri() )  ?>/images/dicas.png" class="icon-header" alt="dicas">
             <?php dynamic_sidebar( 'header-widget-area4' ); ?>
           </div>
         </section>
