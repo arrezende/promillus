@@ -41,16 +41,26 @@
 						
 				</ul>
 			</div>
-			<div class="col-4">
+			<div class="col-4"><?php
+				$tags = get_tags();
+$html = '<ul class="tags">';
+foreach ( $tags as $tag ) {
+	$tag_link = get_tag_link( $tag->term_id );
+			
+	$html .= "<li><a href='{$tag_link}' title='{$tag->name}' class='{$tag->slug}'>";
+	$html .= "{$tag->name}</a></li>";
+}
+$html .= '</ul>';
+echo $html;?>
 				<?php 
-				$args = array('posts_per_page' => 10);                   
+				/*$args = array('posts_per_page' => 10);                   
 				$tagsLoop = new WP_Query($args);
 				echo '<ul class="tags">';
 				while($tagsLoop->have_posts() ) : $tagsLoop->the_post();
 					
 					 the_tags( '<li>', '</li><li>', '</li>' );
 				endwhile;
-				echo '</ul">';
+				echo '</ul">';*/
 				?>
 			</div>
 		</section>

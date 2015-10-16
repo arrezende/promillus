@@ -330,3 +330,43 @@ return $output;
 
 }
 add_shortcode( 'posts_recentes_categoria', 'posts_recentes_categoria' );
+
+function custom_comments( $comment, $args, $depth ) {
+    $GLOBALS['comment'] = $comment;
+    switch( $comment->comment_type ) :
+        case 'pingback' :
+        case 'trackback' : ?>
+            <li <?php comment_class('section'); ?> id="comment<?php comment_ID(); ?>">
+                <div class="back-link">< ?php comment_author_link(); ?></div>
+        <?php break;
+        default : ?>
+            <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+                <article <?php comment_class(); ?> class="comment section">
+                    <div class="comment-body col-2">
+                        <div class="author vcard">
+                            <?php echo get_avatar( $comment, 100 ); ?>
+                        </div><!-- .vcard -->
+                    </div><!-- comment-body -->
+
+                    <footer class="comment-footer col-10">
+                        <span class="author-name"><strong><?php comment_author(); ?></strong></span>
+                        <?php comment_text(); ?>
+                        <time <?php comment_time( 'c' ); ?> class="comment-time">
+                            <span class="date"><?php comment_date(); ?></span>
+                            <span class="time"><?php comment_time(); ?></span>
+                        </time>
+                        <div class="reply">
+                            <?php 
+                            comment_reply_link( array_merge( $args, array( 
+                                'reply_text' => 'Responder',
+                                'after' => ' <span></span>', 
+                                'depth' => $depth,
+                                'max_depth' => $args['max_depth'] 
+                            ) ) ); ?>
+                        </div><!-- .reply -->
+                    </footer><!-- .comment-footer -->
+                </article><!-- #comment-<?php comment_ID(); ?> -->
+        <?php // End the default styling of comment
+        break;
+    endswitch;
+}

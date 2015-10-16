@@ -13,19 +13,23 @@
 <div id="comments">
     
     <?php if ( have_comments() ) : ?>
+         <div class="section">
+             <ul>
+                 <?php wp_list_comments('avatar_size=64&type=comment&callback=custom_comments'); ?>
+             </ul>
+                 <?php if ($wp_query->max_num_pages > 1) : ?>
+                    <div class="pagination">
+                        <ul>
+                            <li class="older"><?php previous_comments_link('Anteriores'); ?></li>
+                            <li class="newer"><?php next_comments_link('Novos'); ?></li>
+                        </ul>
+                    </div>
+                <?php endif; ?>
+             </div>
+         </div>
+        
  
-        <ol class="commentlist">
-        <?php wp_list_comments('avatar_size=64&type=comment'); ?>
-    </ol>
- 
-        <?php if ($wp_query->max_num_pages > 1) : ?>
-        <div class="pagination">
-        <ul>
-            <li class="older"><?php previous_comments_link('Anteriores'); ?></li>
-            <li class="newer"><?php next_comments_link('Novos'); ?></li>
-        </ul>
-    </div>
-    <?php endif; ?>
+        
  
     <?php endif; ?>
  
@@ -67,4 +71,3 @@
      <?php else : ?>
         <h3>Os comentários estão fechados.</h3>
 <?php endif; ?>
-</div>

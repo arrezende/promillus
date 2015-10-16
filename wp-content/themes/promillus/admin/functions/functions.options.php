@@ -152,7 +152,7 @@ $of_options[] = array(
 					    "type"  => "text"
 				);
 $of_options[] = array(
-					    "name"  => "Twitter",
+					    "name"  => "Youtube",
 					    "desc"  => "Url Completa.",
 					    "id"    => "twitter",
 					    "std"   => "",

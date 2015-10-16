@@ -60,3 +60,5 @@ body {
   text-stroke: 1px transparent;
   text-rendering: optimizeLegibility;
 }
+
+strong{font-weight: bold;}

@@ -54,7 +54,7 @@ echo $antes . $post_type->labels->singular_name . $depois;
 } elseif ( is_attachment() ) {
 $parent = get_post($post->post_parent);
 $cat = get_the_category($parent->ID); $cat = $cat[0];
-echo get_category_parents($cat, TRUE, ' ' . $separador . ' ');
+echo is_wp_error( $cat_parents = get_category_parents($cat, TRUE, '' . $delimiter . '') ) ? '' : $cat_parents;
 echo '' . $parent->post_title . ' ' . $separador . ' ';
 echo $antes . get_the_title() . $depois;
 
