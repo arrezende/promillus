@@ -1,6 +1,44 @@
 <?php global $data;?>
+
+
 <?php get_header();?>
+<script>
+	$(document).ready(function() {
+		//Adiciona elemento no html
+		var div = $("<div/>", {class: 'cover-lightbox'});
+		var c_close = $('<a href="#" class="close">&#9421;</a>');
+
+	    $("body").append(div);
+	
+	    $('.modal').append(c_close);
+
+	    //$('.cover-lightbox').append(c_alt);
+        
+		setTimeout(function(){ 
+        $(".cover-lightbox").fadeIn( 400 ).css('display','block');
+        $(".modal").fadeIn( 400 ).css('display','block');
+		}, 2000);
+		
+		//Fechar
+		$('.modal').on('click', '.close', function(event) {
+			$('.cover-lightbox').fadeOut();
+			$('.modal').fadeOut();
+		});
+		
+		$( ".modal" ).submit(function( event ) {
+		  alert( "Handler for .submit() called." );
+		  event.preventDefault();
+		});
+		
+        
+		
+		
+	});
+</script>
+<?php echo do_shortcode("[mc4wp_form]"); ?>
 <!-- page-home -->
+<!-- modal -->
+
 	<div class="container ">
 		<!--loop -->
 		<?php include "loop-destaque.php" ?>
@@ -32,7 +70,7 @@
 									
 									
 									</span>
-									<?php the_post_thumbnail('mini-banner'); ?>
+									<?php the_post_thumbnail(); ?>
 									<p class="txt-destaque"><?php echo get_the_box_excerpt('160');?></p>
 									<a href="<?php the_permalink(); ?>" class="saiba-mais">Saiba Mais!</a>
 								</li>
@@ -42,7 +80,14 @@
 				</ul>
 			</div>
 			<div class="col-4"><?php
-				$tags = get_tags();
+			
+				$tags = get_tags(array(
+			    'orderby' => 'count',
+			    'order'   => 'DESC',
+			    'number'  => 15));
+				echo '<pre>';
+				print_r($tags);
+				echo '</pre>';
 $html = '<ul class="tags">';
 foreach ( $tags as $tag ) {
 	$tag_link = get_tag_link( $tag->term_id );
