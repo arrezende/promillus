@@ -1,9 +1,9 @@
 <?php
 /**
- * Widget de Sobre o Autor
+ * Widget Posts Recentes
  *
- * @author Thiago Belem <contato@thiagobelem.net>
- * @link http://blog.thiagobelem.net/criando-seu-primeiro-widget-no-wordpress/
+ * @author Alex R Rezende <arrezende@gmail.com>
+ * @link http://www.arrezende.com
  */
 class widget_recent_post extends WP_Widget { 
     /**
@@ -20,14 +20,21 @@ class widget_recent_post extends WP_Widget {
     public function widget($argumentos, $instancia) {
         
         function get_widget_excerpt(){
-
-        $excerpt = get_the_content();
-        
+        $caracteres = 90;
+        $excerpt = get_the_excerpt();
         $excerpt = strip_shortcodes($excerpt);
-        
         $excerpt = strip_tags($excerpt);
         
-        $the_str = substr($excerpt, 0, 90);
+        if (strlen($excerpt) > $caracteres) {
+            while(substr($excerpt,$caracteres,1) != ' '){
+                 $caracteres++;
+                
+            };
+            
+            
+        };
+        
+        $the_str = substr($excerpt, 0, $caracteres);
         
         echo $the_str;
         
